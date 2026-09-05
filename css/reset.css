@@ -1,0 +1,41 @@
+footer,
+header,
+main,
+nav,
+ul {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+area:visited {
+    color: var(--color-text);
+}
+
+nav ul li {
+    margin: 0;
+}
+
+header nav img {
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
