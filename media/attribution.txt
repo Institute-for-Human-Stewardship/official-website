@@ -1,1 +1,11 @@
-https://pixabay.com/photos/tractor-farmer-agriculture-field-9779346/
+bg7 → https://pixabay.com/photos/tractor-farmer-agriculture-field-9779346/
+
+---
+
+bg1 → https://pixabay.com/photos/basilica-cathedral-indoors-5273776/
+bg2 → https://pixabay.com/photos/church-basilica-building-tower-5573087/
+bg3 → https://pixabay.com/photos/italy-rome-st-9505449/
+bg4 → https://pixabay.com/photos/saint-pierre-statue-sculpture-art-1633682/
+bg5 → https://pixabay.com/photos/tiber-river-st-peters-basilica-4529605/
+
+bg6 → bg-building

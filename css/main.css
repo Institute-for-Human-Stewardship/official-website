@@ -46,22 +46,27 @@ footer {
 }
 
 h2 {
-    font-size: max(1.25rem, min(4.5dvw, 2.5rem));
+    font-size: max(1.5rem, min(4.5dvw, 2.5rem));
 }
 
-div[bg] {
-    background-image: url(../media/bg.jpg);
-    background-position-x: right;
-    background-position-y: bottom;
-    background-size: cover;
-}
+/* div[bg] {
+    background-image: url(../media/bg-768.jpg);
+    /* background-position-x: right; */
+/* background-position-x: center; */
+/* background-position-y: bottom; */
+/* background-size: cover; */
+/* } */
 
-img[src="logo@64.png"] {
+img[src="media/logo@64.png"] {
     height: 70%;
     object-fit: cover;
 }
 
 @media (min-width: 768px) {
+    /* div[bg] {
+        background-image: url(../media/bg.jpg);
+        background-position-x: right;
+    } */
 
     nav,
     footer,
@@ -76,10 +81,12 @@ img[src="logo@64.png"] {
     }
 
     small[right] ul {
+        /* small[rightcenter ul { */
         display: flex;
     }
 
     small[right] li+li {
+        /* small[rightcenter li+li { */
         margin-inline-start: var(--half-touch-target);
     }
 }
