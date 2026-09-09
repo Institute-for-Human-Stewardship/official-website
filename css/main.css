@@ -49,25 +49,16 @@ h2 {
     font-size: max(1.5rem, min(4.5dvw, 2.5rem));
 }
 
-/* div[bg] {
-    background-image: url(../media/bg-768.jpg);
-    /* background-position-x: right; */
-/* background-position-x: center; */
-/* background-position-y: bottom; */
-/* background-size: cover; */
-/* } */
-
 img[src="media/logo@64.png"] {
     height: 70%;
     object-fit: cover;
 }
 
-@media (min-width: 768px) {
-    /* div[bg] {
-        background-image: url(../media/bg.jpg);
-        background-position-x: right;
-    } */
+nav li {
+    font-size: 120%;
+}
 
+@media (min-width: 768px) {
     nav,
     footer,
     main {
