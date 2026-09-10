@@ -1,3 +1,7 @@
+:root { 
+    color-scheme: dark light; 
+}
+
 :root {
     --color-bg: #060606;
     --color-text: #fff;
