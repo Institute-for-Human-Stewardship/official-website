@@ -6,7 +6,7 @@
     --color-bg: #060606;
     --color-text: #fff;
     --color-link: var(--color-text);
-    --touch-target: 44px;
+    --touch-target: 48px;
     --half-touch-target: calc(var(--touch-target) / 2);
 }
 
