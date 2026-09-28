@@ -6,12 +6,12 @@ Last updated: 2026-09-04.
 
 ## Header
 
-- [Donate](./donate): All donations are tax deductable.
+- [Donate](mailto:senglaub@humanstewardship.org?subject=Confidential%20Donation%20Request): All donations are confidential and tax deductible.
 
 ## Footer
 
-- [Contact](mailto:the-ihs@proton.me): General inquaries.
+- [Contact](mailto:the-ihs@proton.me?subject=Confidential%20General%20Inquiry): All inquiries are confidential.
 
 ## Additional Context
 
-- [Attribution](./attribution.txt): Media attribution links.
+- [Attribution](./media/attribution.txt): Media attribution links.
