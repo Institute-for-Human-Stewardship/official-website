@@ -77,12 +77,10 @@ nav li {
     }
 
     small[right] ul {
-        /* small[rightcenter ul { */
         display: flex;
     }
 
     small[right] li+li {
-        /* small[rightcenter li+li { */
         margin-inline-start: var(--half-touch-target);
     }
 }
