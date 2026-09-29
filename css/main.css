@@ -1,5 +1,5 @@
-:root { 
-    color-scheme: dark light; 
+:root {
+    color-scheme: dark light;
 }
 
 :root {
@@ -8,6 +8,7 @@
     --color-link: var(--color-text);
     --touch-target: 48px;
     --half-touch-target: calc(var(--touch-target) / 2);
+    --font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
 header,
