@@ -1,4 +1,4 @@
-- [ ] Link the "Donate" button to a donation collection platform
-- [ ] Update site metadata for better indexing with Google
-- [ ] Update llms.txt for better indexing with AI search
+- [x] ~~Link the "Donate" button to a donation collection platform~~
+- [x] ~~Update site metadata for better indexing with Google~~
+- [x] ~~Update llms.txt for better indexing with AI search~~
 - [ ] Optimize CSS cascade and inline styles
