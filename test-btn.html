@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Modal</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+
+    <style>
+        body {
+            height: 100dvh;
+            display: flex;
+            align-content: flex-start;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* dialog {
+            box-shadow: black 0.25rem 0.25rem 1rem;
+        } */
+
+        dialog::backdrop {
+            backdrop-filter: blur(3px);
+        }
+
+        #openModal {
+            background-color: transparent;
+            color: var(--color-link);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Trigger Button -->
+    <button id="openModal" onclick="document.getElementById('myModal').showModal()">Open Modal</button>
+
+    <!-- Native Dialog Element -->
+    <dialog id="myModal">
+        <h2>Hello World!</h2>
+        <p>This is a native modern modal window.</p>
+        <button id="closeModal" onclick="document.getElementById('myModal').close()">Close</button>
+    </dialog>
+
+    <script defer>
+        // const modal = document.getElementById('myModal');
+        // const openBtn = document.getElementById('openModal');
+        // const closeBtn = document.getElementById('closeModal');
+
+        // openBtn.addEventListener('click', () => modal.showModal());
+        // closeBtn.addEventListener('click', () => modal.close());
+
+    </script>
+
+</body>
+
+</html>
