@@ -26,6 +26,10 @@
                 background-position-x: right;
             }
         }
+
+        dialog::backdrop {
+            backdrop-filter: blur(3px);
+        }
     </style>
 </head>
 
@@ -40,7 +44,7 @@
                 </li>
                 <ul>
                     <li>
-                        <a href="mailto:senglaub@humanstewardship.org?subject=Confidential%20Donation%20Request">Donate</a>
+                        <button onclick="document.querySelector('#login-modal').showModal()">Login</button>
                     </li>
                 </ul>
             </nav>
@@ -60,6 +64,15 @@
         </small>
     </footer>
 
+    <dialog id="login-modal">
+        <h3>Registered Email</h3>
+        <input type="email" name="" id="email">
+        
+        <div>
+            <button onclick="document.querySelector('#login-modal').close()">Cancel</button>
+            <button type="submit">Continue</button>
+        </div>
+    </dialog>
 </body>
 
 </html>
