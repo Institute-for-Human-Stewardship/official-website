@@ -44,7 +44,7 @@
                 </li>
                 <ul>
                     <li>
-                        <button id="open-login">Login</button>
+                        <button onclick="document.querySelector('#login-modal').showModal()">Login</button>
                     </li>
                 </ul>
             </nav>
@@ -65,16 +65,14 @@
     </footer>
 
     <dialog id="login-modal">
-        <button id="close-login">OK</button>
+        <h3>Registered Email</h3>
+        <input type="email" name="" id="email">
+        
+        <div>
+            <button onclick="document.querySelector('#login-modal').close()">Cancel</button>
+            <button type="submit">Continue</button>
+        </div>
     </dialog>
-
-    <script>
-        openLogin = document.querySelector("#open-login");
-        closeLogin = document.querySelector("#close-login");
-        loginModal = document.querySelector("#login-modal");
-        openLogin.addEventListener("click", () => loginModal.showModal())
-        closeLogin.addEventListener("click", () => loginModal.close())
-    </script>
 </body>
 
 </html>
