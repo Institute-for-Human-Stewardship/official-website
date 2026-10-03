@@ -1,8 +1,8 @@
 # TODO
 
-- [ ] **Reduce website styling complexity and maintenance risk** — Potential EV: lower technical debt, easier future changes, fewer CSS conflicts. — Possible action: optimize CSS cascade and eliminate unnecessary inline styles.
+- [ ] **Reduce website styling complexity and maintenance risk** — Potential EV: lower technical debt, easier future changes, fewer CSS conflicts. — Possible Action: optimize CSS cascade and eliminate unnecessary inline styles.
 
-- [ ] **Improve machine discoverability and semantic clarity** — Potential EV: improve how search engines and AI systems understand and surface the site; upside uncertain. — Possible action: optimize `llms.txt` and schema markup.
+- [ ] **Improve machine discoverability and semantic clarity** — Potential EV: improve how search engines and AI systems understand and surface the site; upside uncertain. — Possible Action: optimize `llms.txt` and schema markup.
 
 ---
 
