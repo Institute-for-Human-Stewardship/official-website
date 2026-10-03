@@ -73,6 +73,10 @@ nav button {
     padding: 0;
 }
 
+dialog {
+    padding: 3rem;
+}
+
 @media (min-width: 768px) {
     nav,
     footer,
