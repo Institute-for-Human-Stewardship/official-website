@@ -77,7 +77,12 @@ dialog {
     padding: 3rem;
 }
 
+dialog::backdrop {
+    backdrop-filter: blur(3px);
+}
+
 @media (min-width: 768px) {
+
     nav,
     footer,
     main {
