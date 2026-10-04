@@ -37,7 +37,7 @@
                 <img src="media/logo@64.png" alt="IHS Logo" srcset="media/logo@64.png 1x, media/logo@128.png 2x, media/logo@256.png 3x, media/logo@512.png 4x">
                 <ul>
                     <li>
-                        <button onclick="document.querySelector('#login-modal').showModal()">Login</button>
+                        <button commandfor="login-modal" command="show-modal">Login</button>
                     </li>
                 </ul>
             </nav>
@@ -62,7 +62,7 @@
         <input type="email" name="" id="email">
         
         <div>
-            <button onclick="document.querySelector('#login-modal').close()">Cancel</button>
+            <button commandfor="login-modal" command="close">Cancel</button>
             <button type="submit">Continue</button>
         </div>
     </dialog>
