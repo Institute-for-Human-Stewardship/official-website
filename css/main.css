@@ -81,6 +81,14 @@ dialog::backdrop {
     backdrop-filter: blur(3px);
 }
 
+form {
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
 @media (min-width: 768px) {
 
     nav,

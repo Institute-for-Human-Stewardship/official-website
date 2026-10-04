@@ -57,15 +57,32 @@
         </small>
     </footer>
 
+
     <dialog id="login-modal">
-        <h3>Registered Email</h3>
-        <input type="email" name="" id="email">
-        
-        <div>
+        <div id="step-1">
+            <h3>Registered Email</h3>
+            <input type="email" name="email id=" email-input" required>
             <button commandfor="login-modal" command="close">Cancel</button>
-            <button type="submit">Continue</button>
+            <button commandfor="login-modal" command="--continue">Continue</button>
+        </div>
+
+        <div id="step-2" hidden>
+            <h4>Thank you. If your account is recognized, an email will be sent with a link to continue.</h4>
+            <button commandfor="login-modal" command="close">Close</button>
         </div>
     </dialog>
+
+    <script>
+        modal = document.querySelector("#login-modal");
+        step1 = document.querySelector("#step-1");
+        step2 = document.querySelector("#step-2");
+
+        modal.addEventListener("command", ({ command }) => {
+            if (command !== "--continue") return;
+            step1.toggleAttribute("hidden");
+            step2.toggleAttribute("hidden");
+        });
+    </script>
 </body>
 
 </html>
