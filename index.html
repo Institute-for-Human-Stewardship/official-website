@@ -58,9 +58,18 @@
     </footer>
 
     <dialog id="login-modal">
-        <h3>Registered Email</h3>
-        <h4>Thank you. If the account is recognized, an email will be sent with a link to continue.</h4>
-        <button style="float:inline-end" commandfor="login-modal" command="close">Close</button>
+        <div data-step="1">
+            <h3>Registered Email</h3>
+            <div class="actions">
+                <button type="button" commandfor="login-modal" command="close">Cancel</button>
+                <button type="button" commandfor="login-modal" command="--continue">Continue</button>
+            </div>
+        </div>
+
+        <div data-step="2" hidden>
+            <h4>Thank you. If the account is recognized, an email will be sent with a link to continue.</h4>
+            <button style="float:inline-end" commandfor="login-modal" command="close">Close</button>
+        </div>
     </dialog>
 
     <!-- <dialog id="login-modal">
