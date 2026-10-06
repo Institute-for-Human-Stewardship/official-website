@@ -81,13 +81,19 @@ dialog::backdrop {
     backdrop-filter: blur(3px);
 }
 
-form {
-    border: 0;
-    box-shadow: none;
-    width: 100%;
-    height: 100%;
-    padding: 0;
+dialog h4 {
+    text-wrap: pretty;
+    margin-block-end: 2.5rem;
 }
+
+dialog button {
+    margin: 0;
+}
+
+/* dialog .btn-group {
+    display: flex;
+    justify-content: space-between;
+} */
 
 @media (min-width: 768px) {
 
@@ -110,4 +116,9 @@ form {
     small[right] li+li {
         margin-inline-start: var(--half-touch-target);
     }
+
+    dialog h4 {
+        margin-block-end: 2rem;
+    }
+
 }
