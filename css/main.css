@@ -74,7 +74,8 @@ nav button {
 }
 
 dialog {
-    padding: 3rem;
+    padding: 1.5rem;
+    width: 75dvw;
 }
 
 dialog::backdrop {
@@ -88,12 +89,13 @@ dialog h4 {
 
 dialog button {
     margin: 0;
+    padding: 0;
 }
 
-/* dialog .btn-group {
+dialog .actions {
     display: flex;
     justify-content: space-between;
-} */
+}
 
 @media (min-width: 768px) {
 
@@ -109,6 +111,14 @@ dialog button {
         align-items: center;
     }
 
+    dialog {
+        padding: 2.5rem;
+    }
+
+    dialog h4 {
+        margin-block-end: 2rem;
+    }
+
     small[right] ul {
         display: flex;
     }
@@ -116,9 +126,4 @@ dialog button {
     small[right] li+li {
         margin-inline-start: var(--half-touch-target);
     }
-
-    dialog h4 {
-        margin-block-end: 2rem;
-    }
-
 }
