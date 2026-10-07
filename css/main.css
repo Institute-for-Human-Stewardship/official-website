@@ -1,12 +1,12 @@
 :root {
-    color-scheme: dark light;
+    color-scheme: dark;
 }
 
 :root {
     --color-bg: #060606;
     --color-text: #fff;
     --color-link: var(--color-text);
-    --touch-target: 48px;
+    --touch-target: 3rem;
     --half-touch-target: calc(var(--touch-target) / 2);
     --font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
@@ -63,7 +63,55 @@ nav li {
     font-size: 115%;
 }
 
+nav button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-bg-secondary);
+    font-size: max(1.1rem, min(3dvw, 1.4rem));
+    margin: 0;
+    min-height: var(--touch-target);
+    padding: 0;
+}
+
+dialog {
+    padding: var(--half-touch-target);
+    width: 75dvw;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(3px);
+}
+
+dialog button {
+    margin: 0;
+    padding: 0;
+    padding-inline: var(--half-touch-target);
+    line-height: var(--touch-target);
+}
+
+dialog h4 {
+    text-wrap: pretty;
+    margin-block-end: var(--half-touch-target);
+}
+
+dialog .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: var(--half-touch-target);
+}
+
+[data-step="2"] .actions {
+    justify-content: end;
+}
+
+@media (min-width: 650px) {
+    dialog {
+        padding: var(--touch-target);
+    }
+}
+
 @media (min-width: 768px) {
+
     nav,
     footer,
     main {
@@ -75,6 +123,14 @@ nav li {
         justify-content: space-between;
         align-items: center;
     }
+
+    /* dialog {
+        padding: 2.5rem;
+    } */
+
+    /* dialog h4 {
+        margin-block-end: 2rem;
+    } */
 
     small[right] ul {
         display: flex;

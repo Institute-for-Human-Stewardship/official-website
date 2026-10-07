@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="dark light">
-    <meta name="description"
-        content="The Institute for Human Stewardship is a registered 501(c)(3) nonprofit organization dedicated to saving souls through the cultivation of family and culture. IHS is headquartered in Watertown, WI.">
+    <meta name="description" content="The Institute for Human Stewardship is a registered 501(c)(3) nonprofit organization dedicated to saving souls through the cultivation of family and culture. IHS is headquartered in Watertown, WI.">
     <title>Institute for Human Stewardship</title>
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script src="js/login.js" defer></script>
     <link rel="stylesheet" href="css/mvp.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
@@ -35,12 +35,10 @@
     <div bg>
         <header>
             <nav>
-                <img src="media/logo@64.png" alt="IHS Logo"
-                    srcset="media/logo@64.png 1x, media/logo@128.png 2x, media/logo@256.png 3x, media/logo@512.png 4x">
-                </li>
+                <img src="media/logo@64.png" alt="IHS Logo" srcset="media/logo@64.png 1x, media/logo@128.png 2x, media/logo@256.png 3x, media/logo@512.png 4x">
                 <ul>
                     <li>
-                        <a href="mailto:senglaub@humanstewardship.org?subject=Confidential%20Donation%20Request">Donate</a>
+                        <button commandfor="login-modal" command="show-modal">Login</button>
                     </li>
                 </ul>
             </nav>
@@ -55,11 +53,29 @@
         <small left>&copy;2026 Institute for Human Stewardship</small>
         <small right>
             <ul>
-                <li><a href="mailto:the-ihs@proton.me?subject=Confidential%20General%20Inquiry">Contact</a></li>
+                <li><a href="mailto:senglaub@humanstewardship.org?subject=Confidential%20General%20Inquiry">Contact</a></li>
             </ul>
         </small>
     </footer>
 
+    <dialog id="login-modal">
+        <div data-step="1">
+            <h3>Registered Email</h3>
+            <input type="email" name="email" id="email" autocomplete="email" pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" required>
+            <div class="actions">
+                <button type="button" commandfor="login-modal" command="close">Cancel</button>
+                <button type="button" commandfor="login-modal" command="--continue" disabled>Continue</button>
+            </div>
+        </div>
+
+        <div data-step="2" hidden>
+            <h4>Thank you. If the account is recognized, an email will be sent with a link to continue.</h4>
+            <div class="actions">
+                <button style="float:inline-end" commandfor="login-modal" command="close">Close</button>
+            </div>
+
+        </div>
+    </dialog>
 </body>
 
 </html>
