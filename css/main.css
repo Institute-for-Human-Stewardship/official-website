@@ -6,7 +6,7 @@
     --color-bg: #060606;
     --color-text: #fff;
     --color-link: var(--color-text);
-    --touch-target: 48px;
+    --touch-target: 3rem;
     --half-touch-target: calc(var(--touch-target) / 2);
     --font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
@@ -74,7 +74,7 @@ nav button {
 }
 
 dialog {
-    padding: 1.5rem;
+    padding: var(--half-touch-target);
     width: 75dvw;
 }
 
@@ -90,11 +90,20 @@ dialog h4 {
 dialog button {
     margin: 0;
     padding: 0;
+    padding-inline: var(--half-touch-target);
+    line-height: var(--touch-target);
 }
 
 dialog .actions {
     display: flex;
     justify-content: space-between;
+    margin-block-start: var(--half-touch-target);
+}
+
+@media (min-width: 650px) {
+    dialog {
+        padding: var(--touch-target);
+    }
 }
 
 @media (min-width: 768px) {
@@ -111,13 +120,13 @@ dialog .actions {
         align-items: center;
     }
 
-    dialog {
+    /* dialog {
         padding: 2.5rem;
-    }
+    } */
 
-    dialog h4 {
+    /* dialog h4 {
         margin-block-end: 2rem;
-    }
+    } */
 
     small[right] ul {
         display: flex;
