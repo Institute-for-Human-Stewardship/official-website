@@ -82,16 +82,16 @@ dialog::backdrop {
     backdrop-filter: blur(3px);
 }
 
-dialog h4 {
-    text-wrap: pretty;
-    margin-block-end: 2.5rem;
-}
-
 dialog button {
     margin: 0;
     padding: 0;
     padding-inline: var(--half-touch-target);
     line-height: var(--touch-target);
+}
+
+dialog h4 {
+    text-wrap: pretty;
+    margin-block-end: var(--half-touch-target);
 }
 
 dialog .actions {
