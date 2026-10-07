@@ -100,6 +100,10 @@ dialog .actions {
     margin-block-start: var(--half-touch-target);
 }
 
+[data-step="2"] .actions {
+    justify-content: end;
+}
+
 @media (min-width: 650px) {
     dialog {
         padding: var(--touch-target);

@@ -60,16 +60,19 @@
     <dialog id="login-modal">
         <div data-step="1">
             <h3>Registered Email</h3>
-            <input type="email" name="email" id="email" autocomplete="email">
+            <input type="email" name="email" id="email" autocomplete="email" required>
             <div class="actions">
                 <button type="button" commandfor="login-modal" command="close">Cancel</button>
-                <button type="button" commandfor="login-modal" command="--continue">Continue</button>
+                <button type="button" commandfor="login-modal" command="--continue" disabled>Continue</button>
             </div>
         </div>
 
         <div data-step="2" hidden>
             <h4>Thank you. If the account is recognized, an email will be sent with a link to continue.</h4>
-            <button style="float:inline-end" commandfor="login-modal" command="close">Close</button>
+            <div class="actions">
+                <button style="float:inline-end" commandfor="login-modal" command="close">Close</button>
+            </div>
+
         </div>
     </dialog>
 
@@ -78,12 +81,18 @@
         step1 = document.querySelector("div[data-step='1']");
         step2 = document.querySelector("div[data-step='2']");
         input = document.querySelector("dialog input");
+        continueBtn = document.querySelector("dialog button[command='--continue']");
+
+        input.addEventListener("input", () => {
+            continueBtn.disabled = !input.checkValidity();
+        })
 
         modal.addEventListener("command", ({ command }) => {
             if (command === "close") {
                 input.value = "";
                 step1.hidden = false;
                 step2.hidden = true;
+                continueBtn.disabled = true;
                 return;
             }
 
@@ -91,7 +100,6 @@
                 step1.hidden = true;
                 step2.hidden = false;
             }
-
         })
     </script>
 </body>
