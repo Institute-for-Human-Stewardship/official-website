@@ -22,11 +22,6 @@ a {
     text-decoration: none;
 }
 
-a:visited,
-area:visited {
-    color: var(--color-text);
-}
-
 nav ul li {
     width: fit-content;
     margin: 0;
@@ -39,4 +34,19 @@ header nav img {
 footer ul {
     list-style: none;
     padding: 0;
+}
+
+nav button {
+    margin: 0;
+    padding: 0;
+}
+
+dialog button {
+    margin: 0;
+    padding: 0;
+}
+
+a:visited,
+area:visited {
+    color: var(--color-text);
 }
