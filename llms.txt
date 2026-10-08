@@ -2,15 +2,13 @@
 
 > The Institute for Human Stewardship ("IHS") is a registered 501(c)(3) nonprofit organization dedicated to saving souls through the cultivation of family and culture. IHS is headquartered in Watertown, WI.
 
-Last updated 2026-09-29.
-
 ## Header
 
-- [Donate](mailto:senglaub@humanstewardship.org?subject=Confidential%20Donation%20Request): All donations are confidential and tax deductible.
+- Login: Type in your registered email here. If the account is recognized, an email will be sent with a link to continue.
 
 ## Footer
 
-- [Contact](mailto:the-ihs@proton.me?subject=Confidential%20General%20Inquiry): All inquiries are confidential.
+- [Contact](mailto:senglaub@humanstewardship.org?subject=Confidential%20General%20Inquiry): All inquiries are confidential.
 
 ## Media Attribution
 
