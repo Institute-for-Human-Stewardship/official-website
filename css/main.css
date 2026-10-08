@@ -68,9 +68,7 @@ nav button {
     border: none;
     color: var(--color-bg-secondary);
     font-size: max(1.1rem, min(3dvw, 1.4rem));
-    margin: 0;
     min-height: var(--touch-target);
-    padding: 0;
 }
 
 dialog {
@@ -83,8 +81,6 @@ dialog::backdrop {
 }
 
 dialog button {
-    margin: 0;
-    padding: 0;
     padding-inline: var(--half-touch-target);
     line-height: var(--touch-target);
 }
@@ -123,14 +119,6 @@ dialog .actions {
         justify-content: space-between;
         align-items: center;
     }
-
-    /* dialog {
-        padding: 2.5rem;
-    } */
-
-    /* dialog h4 {
-        margin-block-end: 2rem;
-    } */
 
     small[right] ul {
         display: flex;
