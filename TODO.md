@@ -6,7 +6,7 @@
 
 - [ ] **Enable Progressive Web App (PWA) functionality.** — EV: Improve the application's accessibility, installability, reliability, and user experience across devices. POSSIBLE ACTION: Audit the existing code against PWA requirements, identify functional gaps, and implement the necessary changes.
 
-- [ ] **Evaluate and improve website accessibility.” — EV: Reduce accessibility barriers, improve usability across devices and assistive technologies, reduce compliance exposure, and potentially expand the site's reachable audience. POSSIBLE ACTION: Audit the website against applicable Web Content Accessibility Guidelines (WCAG), remediate material deficiencies, and verify the results.
+- [ ] **Evaluate and improve website accessibility.** — EV: Reduce accessibility barriers, improve usability across devices and assistive technologies, reduce compliance exposure, and potentially expand the site's reachable audience. POSSIBLE ACTION: Audit the website against applicable Web Content Accessibility Guidelines (WCAG), remediate material deficiencies, and verify the results.
 
 ---
 
