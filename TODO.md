@@ -1,8 +1,12 @@
 # TODO
 
-- [ ] **Reduce website styling complexity and maintenance risk** — Potential EV: lower technical debt, easier future changes, fewer CSS conflicts. — Possible Action: optimize CSS cascade and eliminate unnecessary inline styles.
+- [ ] **Reduce website styling complexity and maintenance risk** — EV: lower technical debt, easier future changes, fewer CSS conflicts. POSSIBLE ACTION: optimize CSS cascade and eliminate unnecessary inline styles.
 
-- [ ] **Improve machine discoverability and semantic clarity** — Potential EV: improve how search engines and AI systems understand and surface the site; upside uncertain. — Possible Action: optimize `llms.txt` and schema markup.
+- [ ] **Improve machine discoverability and semantic clarity** — EV: improve how search engines and AI systems understand and surface the site; upside uncertain. POSSIBLE ACTION: optimize `llms.txt` and schema markup.
+
+- [ ] **Enable Progressive Web App (PWA) functionality.** — EV: Improve the application's accessibility, installability, reliability, and user experience across devices. POSSIBLE ACTION: Audit the existing code against PWA requirements, identify functional gaps, and implement the necessary changes.
+
+- [ ] **Evaluate and improve website accessibility.” — EV: Reduce accessibility barriers, improve usability across devices and assistive technologies, reduce compliance exposure, and potentially expand the site's reachable audience. POSSIBLE ACTION: Audit the website against applicable Web Content Accessibility Guidelines (WCAG), remediate material deficiencies, and verify the results.
 
 ---
 
